@@ -16,4 +16,7 @@ app.use(
   }),
 );
 
+import shopRoutes from "./routes/shop.routes.js";
+app.use("/api/shop", shopRoutes);
+
 export default app;

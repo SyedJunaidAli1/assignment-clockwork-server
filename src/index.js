@@ -15,3 +15,4 @@ app.listen(PORT, () => {
 app.get("/", (req, res) => {
   res.send("Shopify App Server Running");
 });
+
