@@ -4,16 +4,16 @@ const shopSchema = new mongoose.Schema({
   shopDomain: {
     type: String,
     required: true,
-    unique: true
+    unique: true,
   },
   installedAt: {
     type: Date,
-    default: Date.now
+    default: Date.now,
   },
   postPurchaseMessage: {
     type: String,
-    default: "Thank you for your order!"
-  }
+    default: "Thank you for your order!",
+  },
 });
 
 export default mongoose.model("Shop", shopSchema);

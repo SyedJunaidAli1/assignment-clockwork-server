@@ -16,6 +16,10 @@ app.use(
   }),
 );
 
+app.get("/", (req, res) => {
+  res.send("Shopify App Server Running");
+});
+
 import shopRoutes from "./routes/shop.routes.js";
 app.use("/api/shop", shopRoutes);
 
