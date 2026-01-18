@@ -22,5 +22,8 @@ app.get("/", (req, res) => {
 
 import shopRoutes from "./routes/shop.routes.js";
 app.use("/api/shop", shopRoutes);
+import authRoutes from "./routes/auth.routes.js";
+
+app.use("/api/auth", authRoutes);
 
 export default app;
